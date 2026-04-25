@@ -1,0 +1,125 @@
+body {
+
+  margin: 0;
+  padding: 0;
+  
+  background-color: #E8EDF2; 
+
+}
+/* sekiller olan hisse */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  background-color: white;
+  min-height: 100vh;
+}
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+
+.uploader {
+  background-color: #f8f9fa;
+  border: 2px dashed #3498db;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.uploader:hover {
+  background-color: #eef2f7;
+  border-color: #2980b9;
+}
+
+/* GRID Sistemi - Əsas Hissə */
+.image-grid {
+  display: grid;
+ 
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px 0;
+}
+
+/*  (ImageItem) */
+.image-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-card:hover {
+  transform: translateY(-5px);
+}
+
+.image-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; 
+}
+
+
+.image-info {
+  padding: 15px;
+}
+
+.image-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  word-break: break-all;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  padding: 10px 15px;
+  margin-top: auto; /* Düymələri kartın aşağısı */
+}
+
+button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+.image-metadata {
+  font-size: 11px;
+  color: #888;
+  text-transform: uppercase;
+  margin: 4px 0;
+}
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.tag-pill {
+  background: #e1e8ed;
+  color: #333;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.btn-edit { background-color: #f1c40f; color: #000; }
+.btn-delete { background-color: #e74c3c; color: white; }
+button:hover { opacity: 0.8; }
