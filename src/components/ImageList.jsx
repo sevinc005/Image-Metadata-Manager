@@ -6,7 +6,7 @@ const ImageList = () => {
   const { images } = useImages();
   const [filter, setFilter] = useState("");
 
-  // Şəkilləri süzgəcdən keçiririk
+  
   const filteredImages = images.filter(img => {
     // Əgər axtarış qutusu boşdursa, hamısını göstər
     if (filter.trim() === "") return true;
@@ -21,7 +21,7 @@ const ImageList = () => {
 
   return (
     <div>
-      {/* Qruplaşdırma/Axtarış Paneli */}
+      
       <div style={{ marginBottom: '30px', textAlign: 'center' }}>
         <input 
           type="text" 

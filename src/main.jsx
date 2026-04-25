@@ -7,7 +7,7 @@ import { ImageProvider } from './context/ImageContext'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* Bütün tətbiqi ImageProvider ilə bükürük ki, hər yerdən dataya çata bilək */}
+    {}
     <ImageProvider>
       <App />
     </ImageProvider>
